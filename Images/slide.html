@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Karladisplay=swap" rel="stylesheet">
+    <!-- Import Karla font from google fonts and apply it to the web page -->
+    
+    <link rel="stylesheet" href="style.css">
+    <!-- _____, _____, and _____ are 3 ways to style HTML files. The most practical one is _____. -->
+    <title>Re:Coded</title>
+</head>
+
+<body>
+    <header>
+        <!-- What is alt attribute used for? -->
+        <!-- Type your answer here / if the requested image can not be displayed, the 'alt' provide the image name to visitors. In this way, the visitors can understand this image what it is.-->
+        <img src="https://drive.google.com/uc?id=1ml1cDYnVse0DrPlzkG6tOuQOmDfX0_8z" alt="Re:Coded logo" class="logo">
+        <h1 class="title">Re:Coded</h1>
+        <p class="italic">Re:Coded is a non-profit tech organization preparing talented youth in conflict-affected areas to enter the digital economy as software developers and tech entrepreneurs</p>
+    </header>
+    <section class="bootcamp">
+        <!-- Where should the following h2 tag be displayed? Center or right? and why? -->
+        <!-- Type your answer here  It is displayed on center because text-align was determined as center.-->
+        <h2 class='align-right' style="text-align: center;">Re:Coded Front-End Web Development Bootcamp</h2>
+        <h2>What is our bootcamp</h2>
+        <!-- Make every 'Front-End Web Development' sentence in the following article bold -->
+        <p>Our <strong>Front-End Web Development</strong> Bootcamp is designed to kickstart your career as junior web developer or as an entrepreneur with a vision to build your own website, app or software solution.</p>
+        <p>As a non-profit organization we have partnered with Flatiron School in New York, one of the leading coding schools in the world. That allows us to teach their <strong>Front-End Web Development</strong> course introducing you to HTML and CSS. We provide additional
+            training on React, a library for building user interfaces maintained by Facebook and Instagram. And during our program, you will learn JavaScript, all of which will allow you to build amazing websites and accelerate your journey to becoming
+            a working Web Developer! </p>
+        <p>By the end of the program, you will have a portfolio of completed projects to highlight your achievements. </p>
+        <p>The <strong>Front-End Web Development</strong> course will take approximately 3.5 months with 10 hours per week of in-person training and 15-25 hours per week of self-study. </p>
+        <p>The last 1.5 month of the bootcamp will be dedicated to a final project to help you build your portfolio of work. </p>
+        <p>Our programs are all in english.</p>
+        <h3>Who can join</h3>
+        <!-- What are the differences between <ul> and <ol>? --> 
+        <!-- Type your answer here   ul is unordered list and ol is ordered list and it allows to sort list with numbers or alphabet etc..-->
+        <ul>
+            <li>People between the ages of 18 and 35 years. </li>
+            <li>A demonstrated passion for coding and technology. </li>
+            <li>The time and capacity to commit to a full coding bootcamp. Classes are three times per week in person at one of our learning hubs. </li>
+            <li>An intermediate level of English comprehension. </li>
+            <li>The aptitude to succeed in the selection process. </li>
+        </ul>
+        <div class="buttons">
+            <!-- Using CSS, try to provide multiple methods to display these divs in a row like the attached pictures. Keep one of the methods, and comment out the rest -->
+            <div class="searchDiv">
+                <form id='search'>
+                    <input type="text" name="searchBox" id="searchBox" placeholder="search bootcamps">
+                    <input onclick="myFunction()" type="submit" id="searchBtn" value="search">
+                </form>
+                <div id="searchResults"></div>
+            </div>
+            <div class="awesomeDiv">
+                    <button id="awesomeBtn" onclick="awesomef()">I'm Awesome</button><br><br>
+                <div id="awesome">
+                    <p>I'm awesome, I'm doing the js part</p>
+                </div>
+            </div>
+            <div class="infoDiv">
+              <button onclick="info()" id="infoBtn">More Info</button>
+              <div id="dataDisplay"></div>
+            </div>
+        </div>
+        <!-- ##Delete the wrong fact/facts in the comments below -->
+        <!-- 2. The same class can be used multiple times, but the same id can be used only once -->
+        <!-- 3. In CSS, '#' refers to id while '.' refers to class -->
+        <!-- 4. Classes are used more in javascript -->
+    </section>
+    <footer>
+        <div>
+            <!-- Add the functionality to open the link in a new tab -->
+            <a href="https://www.facebook.com/recodedofficial" target="_blank"><img src="https://drive.google.com/uc?id=1-yaPy5DZhbYsLxUP8YWjvlpIZdbzDXxl" alt="facebook" class="socialIcon"></a>
+            <a href="https://www.instagram.com/recodedofficial/" target="_blank"><img src="https://drive.google.com/uc?id=18b8F06ADRb6oGVuWosRYnPPOImNt6iCI" alt="" class="socialIcon"></a>
+            <a href="https://twitter.com/recodedofficial" target="_blank"><img src="https://drive.google.com/uc?id=1vVXb5gSBxgwy1idaoPA6rDhc9leviMjx" alt="" class="socialIcon"></a>
+            <a href="https://www.linkedin.com/company/re-coded/" target="_blank"><img src="https://drive.google.com/uc?id=1Rzvd49x5LKeb8yVEGgGfuNBKqN9LXpWE" alt="" class="socialIcon"></a>
+        </div>
+        <div>
+            <span>(&copy;) 2020. Re:Coded is a 501(&copy;)(3) non-profit corporation.</span>
+        </div>
+    </footer>
+    <script>
+       /* Using JavaScript, you have to:
+        - Add functionality to the three buttons
+          - When clicking the "I'm Awesome" button, display the content of '#awesome' div.
+          - When clicking the "I'm Awesome" button again, hide the content of '#awesome' div.
+          - When clicking "More Info" button, get the countries and bootcamps data from the JSON file and display them in the '#dataDisplay' div. 
+          - When clicking the "search" button, search the camps in JSON file by country and display the search results in the '#searchResults' div  . */
+          
+          function awesomef() {
+              var x = document.getElementById("awesome");
+              if (x.style.display === "none") {
+                x.style.display = "block";
+              } else {
+                x.style.display = "none";
+              }
+            }
+        function info() {
+          var countries = ["Iraq", "Turkey", "Yemen"];
+          var bootcamp = ["Web Development Bootcamp", "Android Development Bootcamp", "UI/UX Design Bootcamp"];
+          text = document.getElementById("dataDisplay");
+          text.innerHTML = "Countries Recoded works in: "+ "<br>" + countries + "Recoded Bootcamps in: " +"<br>" + bootcamp;
+          
+        }
+        
+
+    </script>
+</body>
+
+</html>
