@@ -164,7 +164,6 @@ li a:hover{
 .wrap {
 
     width: 1000px;
-    min-width: 1000px;
     height: 350px;
     position: relative;
     margin: auto;
@@ -174,7 +173,6 @@ li a:hover{
 
 #wrap1 {
     width: 50%;
-    min-width: 200px;
     height: 90%;
     padding: 20px;
     background-color: #473ca4;
@@ -231,7 +229,6 @@ li a:hover{
 #wrap2 {
 
     width: 40%;
-    min-width: 200px;
     border-radius: 7px;
     background-color: rgba(255, 255, 255, 0.907);
     padding: 30px;
