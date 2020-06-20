@@ -39,7 +39,7 @@
 
 
 .logo {
-    width: 130px;
+    width: 140px;
     height: 53px;
     float: left;
     position: relative;
@@ -78,8 +78,6 @@
     color: rgba(232, 232, 232, 0.968);
     text-decoration: none;
     font-size: 12px;
-
-    
    
 }
 
@@ -184,7 +182,6 @@ li a:hover{
     top: 10px;
     left: 30px;
     float: left;
-
 
 }
 
@@ -646,10 +643,7 @@ margin-top: 30px;
     display: inline-block;
     width: 180px;
     
-  
-   
 }
-
 
 #profit {
 
@@ -903,15 +897,14 @@ margin-top: 30px;
 }
 
     #rightSide {
-        width: 100px;
-        height: 200px;
-        display: block;
-        position: relative;
-        color: white;
-        left: 900px;
-        top: -400px;
+    width: 100px;
+    height: 200px;
+    display: block;
+    position: relative;
+    color: white;
+    left: 900px;
+    top: -400px;
        
-
     }
 
 .footer a {
